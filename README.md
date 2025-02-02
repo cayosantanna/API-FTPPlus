@@ -9,6 +9,24 @@ A API FTPPlus foi desenvolvida para realizar o gerenciamento de arquivos entre u
 - **excluir <arquivo>:** Excluir um arquivo existente no servidor.
 - **baixar <arquivo>:** Baixar um arquivo do servidor para o cliente.
 
+API segura para transferência de arquivos via sockets com validação rigorosa e protocolo JSON.
+
+Fornecer uma solução segura para transferência de arquivos entre clientes e servidores com:
+- Protocolo de comunicação simples via JSON
+- Validação rigorosa de entradas
+- Operações básicas de gerenciamento de arquivos
+
+---
+
+## ⚙️ Funcionalidades
+
+| Comando          | Descrição                          | Exemplo de Uso               |
+|------------------|------------------------------------|-------------------------------|
+| `listar`         | Lista arquivos do servidor         | `python client.py 127.0.0.1 "listar"` |
+| `enviar <arquivo>`| Envia arquivo para o servidor      | `python client.py 127.0.0.1 "enviar foto.jpg"` |
+| `baixar <arquivo>`| Baixa arquivo do servidor         | `python client.py 127.0.0.1 "baixar relatorio.pdf"` |
+| `excluir <arquivo>`| Remove arquivo do servidor       | `python client.py 127.0.0.1 "excluir temp.txt"` |
+
 ---
 
 ## Funcionamento da Comunicação
